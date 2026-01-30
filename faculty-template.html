@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Profile Template | UMSL EE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="subpage">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="umsl-text">UMSL</span>
+                <span class="ee-text">Electrical Engineering</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faculty.html" class="active">Faculty</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="student-life.html">Student Life</a></li>
+                <li><a href="abet.html">ABET</a></li>
+                <li><a href="index.html#contact" class="btn-primary">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Profile Header -->
+        <header class="profile-header header-red">
+            <div class="container profile-header-grid">
+                <div class="profile-img-large">
+                    <div class="faculty-placeholder">??</div>
+                </div>
+                <div class="profile-main-info">
+                    <h1>Dr. [Full Name]</h1>
+                    <p class="role">[Title / Rank]</p>
+                    <div class="profile-contact-info">
+                        <p><i data-lucide="mail"></i> [email]@umsl.edu</p>
+                        <p><i data-lucide="phone"></i> (314) 516-XXXX</p>
+                        <p><i data-lucide="map-pin"></i> [Office Location]</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section profile-body">
+            <div class="container profile-content-grid">
+                <!-- Main Content -->
+                <div class="profile-main">
+                    <div class="profile-block">
+                        <h2>Biography</h2>
+                        <p>[Insert detailed biography here. Describe research philosophy, teaching background, and
+                            professional journey.]</p>
+                    </div>
+
+                    <div class="profile-block">
+                        <h2>Research Interests</h2>
+                        <ul class="interest-list">
+                            <li>[Research Area 1]</li>
+                            <li>[Research Area 2]</li>
+                            <li>[Research Area 3]</li>
+                            <li>[Research Area 4]</li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-block">
+                        <h2>Key Publications</h2>
+                        <div class="publication-list">
+                            <div class="pub-item">
+                                <p class="pub-title">"[Title of the Research Paper or Publication]"</p>
+                                <p class="pub-meta">Journal Name / Conference Name, Year. Authors: [List of Authors].
+                                </p>
+                            </div>
+                            <!-- Add more pub-items as needed -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Content -->
+                <aside class="profile-sidebar">
+                    <div class="sidebar-block">
+                        <h3>Education</h3>
+                        <ul class="edu-list">
+                            <li><strong>Ph.D. in [Field]</strong><br>[University Name], [Year]</li>
+                            <li><strong>M.S. in [Field]</strong><br>[University Name], [Year]</li>
+                            <li><strong>B.S. in [Field]</strong><br>[University Name], [Year]</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-block">
+                        <h3>Professional Societies</h3>
+                        <p>IEEE Senior Member, [Other Organizations]</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2025 University of Missouri–St. Louis. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

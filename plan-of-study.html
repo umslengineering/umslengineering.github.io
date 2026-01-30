@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan of Study | Electrical Engineering | UMSL</title>
+    <meta name="description"
+        content="View the 128-credit hour Electrical Engineering Plan of Study at UMSL. Year-by-year curriculum breakdown and course descriptions.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .pos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .year-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--umsl-red);
+        }
+
+        .year-title {
+            color: var(--umsl-red);
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .semester-tables {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .semester-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .semester-table th {
+            text-align: left;
+            padding: 0.75rem 0;
+            border-bottom: 2px solid #eee;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .semester-table td {
+            padding: 1rem 0;
+            border-bottom: 1px solid #f5f5f5;
+            vertical-align: top;
+        }
+
+        .course-code {
+            font-weight: 700;
+            color: var(--text-dark);
+            display: block;
+        }
+
+        .course-name {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .credits {
+            text-align: right;
+            font-weight: 600;
+            color: var(--umsl-red);
+        }
+
+        .total-row {
+            font-weight: 700;
+            border-top: 2px solid #eee;
+        }
+
+        .notes-section {
+            margin-top: 4rem;
+            background: #fdfdfd;
+            padding: 3rem;
+            border-radius: 20px;
+            border-left: 4px solid var(--umsl-gold);
+        }
+
+        .notes-section h3 {
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .notes-list {
+            list-style: none;
+        }
+
+        .notes-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .notes-list li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            color: var(--umsl-gold);
+            font-weight: 800;
+        }
+
+        .descriptions-section {
+            padding: 6rem 0;
+        }
+
+        .course-desc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .course-desc-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
+            border-left: 2px solid #eee;
+        }
+
+        .course-desc-item:hover {
+            border-left-color: var(--umsl-red);
+        }
+
+        .course-desc-item h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--umsl-red);
+        }
+
+        .prereq {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 1024px) {
+            .semester-tables {
+                grid-template-columns: 1fr;
+            }
+
+            .pos-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .course-desc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="umsl-text">UMSL</span>
+                <span class="ee-text">Electrical Engineering</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="student-life.html">Student Life</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="plan-of-study.html" class="active">Plan of Study</a></li>
+                <li><a href="abet.html">ABET</a></li>
+                <li><a href="index.html#contact" class="btn-primary">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header header-red">
+        <div class="container">
+            <h1>Plan of Study</h1>
+            <p>Our comprehensive 128-credit hour curriculum designed for excellence.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">BSEE Curriculum Breakdown</h2>
+                <p class="section-subtitle">A balanced mix of fundamental sciences, mathematics, and advanced
+                    engineering specializations.</p>
+            </div>
+
+            <div class="pos-grid">
+                <!-- Freshman Year -->
+                <div class="year-card">
+                    <h3 class="year-title"><i data-lucide="award"></i> Freshman Year</h3>
+                    <div class="semester-tables">
+                        <div>
+                            <table class="semester-table">
+                                <thead>
+                                    <tr>
+                                        <th>First Semester</th>
+                                        <th class="credits">CR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="course-code">MATH 1800</span><span class="course-name">Calculus
+                                                I</span></td>
+                                        <td class="credits">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">ENGL 1100</span><span class="course-name">First
+                                                Year Writing</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">ENGR 1414</span><span
+                                                class="course-name">Engineering Design</span></td>
+                                        <td class="credits">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">COMP SCI 1250</span><span
+                                                class="course-name">Software Tools for Engineers</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">INTDSC 1003</span><span
+                                                class="course-name">Engineering Freshman Seminar</span></td>
+                                        <td class="credits">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">CHEM 1134/1134L</span><span
+                                                class="course-name">General Chemistry</span></td>
+                                        <td class="credits">4</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td>Semester Total</td>
+                                        <td class="credits">18</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <table class="semester-table">
+                                <thead>
+                                    <tr>
+                                        <th>Second Semester</th>
+                                        <th class="credits">CR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="course-code">MATH 1900</span><span class="course-name">Calculus
+                                                II</span></td>
+                                        <td class="credits">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">HIST 1001/1002</span><span
+                                                class="course-name">American History/Gov.</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">PHYS 2111/211L</span><span
+                                                class="course-name">Mechanics and Heat</span></td>
+                                        <td class="credits">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 1108</span><span class="course-name">Object
+                                                Oriented Programming</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">ENGR 1000</span><span
+                                                class="course-name">Res/Innov/Entr</span></td>
+                                        <td class="credits">0</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td>Semester Total</td>
+                                        <td class="credits">16</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sophomore Year -->
+                <div class="year-card">
+                    <h3 class="year-title"><i data-lucide="zap"></i> Sophomore Year</h3>
+                    <div class="semester-tables">
+                        <div>
+                            <table class="semester-table">
+                                <thead>
+                                    <tr>
+                                        <th>First Semester</th>
+                                        <th class="credits">CR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="course-code">MATH 2000</span><span class="course-name">Calculus
+                                                III</span></td>
+                                        <td class="credits">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">PHYS 2112/2012L</span><span
+                                                class="course-name">Electricity/Optics</span></td>
+                                        <td class="credits">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">PHIL 2259</span><span
+                                                class="course-name">Engineering Ethics</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 2310</span><span class="course-name">Circuit
+                                                Analysis I</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">ENGR 2000</span><span
+                                                class="course-name">Res/Innov/Entr</span></td>
+                                        <td class="credits">1</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td>Semester Total</td>
+                                        <td class="credits">17</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <table class="semester-table">
+                                <thead>
+                                    <tr>
+                                        <th>Second Semester</th>
+                                        <th class="credits">CR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="course-code">MATH 2450</span><span class="course-name">Linear
+                                                Algebra</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">MATH 1320</span><span
+                                                class="course-name">Probability/Statistics</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 2800</span><span class="course-name">Digital
+                                                Circuit Design</span></td>
+                                        <td class="credits">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">MATH 2020</span><span
+                                                class="course-name">Differential Equations</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 2320</span><span class="course-name">Circuit
+                                                Analysis II</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td>Semester Total</td>
+                                        <td class="credits">16</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Junior Year -->
+                <div class="year-card">
+                    <h3 class="year-title"><i data-lucide="cpu"></i> Junior Year</h3>
+                    <div class="semester-tables">
+                        <div>
+                            <table class="semester-table">
+                                <thead>
+                                    <tr>
+                                        <th>First Semester</th>
+                                        <th class="credits">CR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="course-code">EENG 3310/L</span><span
+                                                class="course-name">Electronics I & PCB Design</span></td>
+                                        <td class="credits">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">ENGL 3130</span><span
+                                                class="course-name">Technical Writing</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 3300</span><span
+                                                class="course-name">Electromagnetics</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 3500</span><span class="course-name">Signals
+                                                and Systems</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 3900</span><span
+                                                class="course-name">Microprocessor Design</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">ENGR 3000</span><span
+                                                class="course-name">Res/Innov/Entr</span></td>
+                                        <td class="credits">1</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td>Semester Total</td>
+                                        <td class="credits">17</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <table class="semester-table">
+                                <thead>
+                                    <tr>
+                                        <th>Second Semester</th>
+                                        <th class="credits">CR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="course-code">EENG 3410/L</span><span class="course-name">Energy
+                                                Conversion</span></td>
+                                        <td class="credits">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EXPLORE</span><span class="course-name">Social
+                                                Sciences (Global)</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 4410</span><span class="course-name">Control
+                                                Systems</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 3800</span><span
+                                                class="course-name">Communications Systems</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EXPLORE</span><span class="course-name">Humanities
+                                                (Global)</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td>Semester Total</td>
+                                        <td class="credits">16</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior Year -->
+                <div class="year-card">
+                    <h3 class="year-title"><i data-lucide="rocket"></i> Senior Year</h3>
+                    <div class="semester-tables">
+                        <div>
+                            <table class="semester-table">
+                                <thead>
+                                    <tr>
+                                        <th>First Semester</th>
+                                        <th class="credits">CR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="course-code">EENG 4980</span><span class="course-name">Senior
+                                                Design I</span></td>
+                                        <td class="credits">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 4300</span><span class="course-name">Digital
+                                                System Design w/ FPGA</span></td>
+                                        <td class="credits">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EXPLORE</span><span class="course-name">Humanities
+                                                (Global)</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">ENGR 2022</span><span class="course-name">Engr
+                                                Econ/Proj Mgt</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EXPLORE</span><span class="course-name">Comm
+                                                Proficiency Core</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">ENGR 4400</span><span
+                                                class="course-name">Fundamental Engineering</span></td>
+                                        <td class="credits">1</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td>Semester Total</td>
+                                        <td class="credits">16</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <table class="semester-table">
+                                <thead>
+                                    <tr>
+                                        <th>Second Semester</th>
+                                        <th class="credits">CR</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="course-code">EENG 4990</span><span class="course-name">Senior
+                                                Design II</span></td>
+                                        <td class="credits">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 4108</span><span class="course-name">AI &
+                                                Deep Learning</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 4998</span><span class="course-name">EE
+                                                Elective Course</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EENG 4999</span><span class="course-name">EE
+                                                Elective Course</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="course-code">EXPLORE</span><span
+                                                class="course-name">Humanities/Social Science</span></td>
+                                        <td class="credits">3</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td>Semester Total</td>
+                                        <td class="credits">14</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notes-section">
+                <h3>Curriculum Notes</h3>
+                <ul class="notes-list">
+                    <li><strong>Total Credit Hours:</strong> 128 (May vary slightly based on elective choices)</li>
+                    <li><strong>Global Perspectives:</strong> Only 1000-2000 courses in the Global Perspectives area
+                        that also fulfill a Humanities/Fine Arts or Social Sciences Explore areas are acceptable. Check
+                        with Advisor.</li>
+                    <li><strong>Gen Ed Explore, Social Sciences:</strong> Includes any 1000-2000 course from subject
+                        areas: Accounting, Anthropology, Business Administration, Communication, Criminology and
+                        Criminal Justice, Economics, Educational Psychology, Entrepreneurship, Finance, Geography, Media
+                        Studies, Political Science, Psychology, Social Work, Sociology, Sport Management.</li>
+                    <li><strong>Gen Ed Transfer:</strong> Courses could be satisfied by taking Advanced Credit Courses
+                        in high school transferring in these credits to UMSL.</li>
+                    <li><strong>Gen Ed Communication Proficiency Core:</strong> Recommends COMM 1040 – Public Speaking
+                        or COMM 2240 – Persuasive Communication.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="descriptions" class="descriptions-section">
+            <div class="section-header">
+                <h2 class="section-title">EE Course Descriptions</h2>
+                <p class="section-subtitle">Detailed technical breakdowns for our core engineering and mathematics
+                    curriculum.</p>
+            </div>
+
+            <div class="course-desc-grid">
+                <!-- MATH -->
+                <div class="course-desc-item">
+                    <h3>MATH 1800: Analytic Geometry and Calculus I</h3>
+                    <span class="prereq">Prerequisites: MATH 1030 and MATH 1035, or MATH 1045.</span>
+                    <p>Introduction to differential and integral calculus. Topics may include limits, derivatives,
+                        related rates, Newton's method, the Mean-Value Theorem, Max-Min problems, the integral, and the
+                        Fundamental Theorem of Integral Calculus.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>MATH 1900: Analytic Geometry and Calculus II</h3>
+                    <span class="prereq">Prerequisite: MATH 1800.</span>
+                    <p>Covers analytical geometry and additional aspects of calculus. Topics may include inverse
+                        functions, integration techniques, applications of integration, parametric and polar equations,
+                        and infinite series.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>MATH 2000: Analytic Geometry and Calculus III</h3>
+                    <span class="prereq">Prerequisite: MATH 1900.</span>
+                    <p>Topics include vectors, cylindrical and spherical coordinates, vector-valued functions, functions
+                        of several variables, partial and directional derivatives, extrema, and multiple integrals.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>MATH 2020: Introduction to Differential Equations</h3>
+                    <span class="prereq">Prerequisite: MATH 2000.</span>
+                    <p>Topics include linear differential equations, equations with constant coefficients, Laplace
+                        transforms, power series solutions, and systems of ordinary differential equations.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>MATH 1320: Introduction to Probability and Statistics</h3>
+                    <span class="prereq">Prerequisite: MATH 1030 or MATH 1045.</span>
+                    <p>Covers basic concepts and methods in probability and statistics. Topics include descriptive
+                        statistics, probabilities of events, random variables, sampling distributions, estimation, and
+                        hypothesis testing.</p>
+                </div>
+                <!-- ENGR -->
+                <div class="course-desc-item">
+                    <h3>ENGR 1414: Elementary Engineering Design</h3>
+                    <span class="prereq">Prerequisites: MATH 1030/1035, or MATH 1045.</span>
+                    <p>Fundamental concepts and processes (project planning, design practices, teamwork, innovation, and
+                        systems integration) involved in designing engineering systems. Includes team projects and
+                        reports.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>ENGR 2022: Engineering Economics and Project Management</h3>
+                    <span class="prereq">Prerequisite: Junior/Senior standing.</span>
+                    <p>Application of economics to engineering and industrial problems requiring a knowledge of
+                        engineering for their solution.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>ENGR 4400: Fundamentals of Engineering (FE Exam) Review</h3>
+                    <span class="prereq">Prerequisite: Senior Standing.</span>
+                    <p>Review of material covered in the FE exam, the first step towards becoming a licensed
+                        professional engineer (P.E.).</p>
+                </div>
+                <!-- EENG -->
+                <div class="course-desc-item">
+                    <h3>EENG 1108: Object-Oriented Programming</h3>
+                    <span class="prereq">Prerequisite: COMP SCI 1250 or equivalent.</span>
+                    <p>Introduction to programming concepts using object-oriented programming (OOP). Topics include
+                        classes, objects, inheritance, polymorphism, data structures, and algorithms.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>EENG 2310: Circuit Analysis I</h3>
+                    <span class="prereq">Prerequisites: MATH 1900 and PHYSICS 2111/2111L. Corequisite: MATH 2020.</span>
+                    <p>Basic circuit analysis techniques. Topics include Ohm’s Law, Kirchhoff’s Laws, nodal and mesh
+                        analysis, Thevenin/Norton equivalents, and sinusoidal steady-state analysis.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>EENG 2800: Digital Circuit Design with Verilog/VHDL</h3>
+                    <span class="prereq">Prerequisite: EENG 1108.</span>
+                    <p>Introduction to digital logic circuits and hardware description languages. Topics include logic
+                        gates, combinational and sequential logic design, finite-state machines, and FPGA
+                        implementation.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>EENG 3310: Electronics I and PCB Design</h3>
+                    <span class="prereq">Prerequisites: EENG 2320.</span>
+                    <p>Study of electronic devices and circuit applications. Topics include semiconductor physics,
+                        diodes, BJTs, FETs, and small-signal models. Includes SPICE simulation and PCB fabrication.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>EENG 3500: Signals and Systems</h3>
+                    <span class="prereq">Prerequisite: MATH 2020.</span>
+                    <p>Study of continuous- and discrete-time signals and systems. Topics include convolution, Fourier
+                        series, Fourier/Laplace/z-transforms, and system response.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>EENG 3410: Electromechanical Energy Conversion</h3>
+                    <span class="prereq">Prerequisite: EENG 2320.</span>
+                    <p>Electromagnetic principles applied to electromechanical devices. Topics include transformers,
+                        DC/AC machines, power electronics, and energy efficiency.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>EENG 4410: Control Systems</h3>
+                    <span class="prereq">Prerequisite: EENG 3500.</span>
+                    <p>Analysis and design of feedback control systems. Topics include system modeling, stability, root
+                        locus, Bode/Nyquist plots, and PID controllers.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>EENG 4108: Artificial Intelligence & Deep Learning</h3>
+                    <span class="prereq">Prerequisite: Senior standing.</span>
+                    <p>Machine learning and neural networks in electrical engineering. Topics include
+                        supervised/unsupervised learning, CNNs, RNNs, and applications in signal processing and
+                        robotics.</p>
+                </div>
+                <div class="course-desc-item">
+                    <h3>EENG 4980/4990: Senior Design I & II</h3>
+                    <span class="prereq">Prerequisite: Senior standing.</span>
+                    <p>Two-semester capstone sequence. Teams propose, plan, develop, test, and present a significant
+                        engineering design project. Includes professional documentation and ethics.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <p><em>Refer to the UMSL course catalog for a complete list of course descriptions and
+                        prerequisites.</em></p>
+                <a href="index.html#contact" class="btn-primary" style="margin-top: 2rem;">Contact Advisor</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="umsl-text">UMSL</span>
+                <p>Establishing the future of engineering since 2025.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="plan-of-study.html">Plan of Study</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Benton Hall, 43 Benton Ct.</p>
+                <p>University of Missouri - St. Louis</p>
+                <p>St. Louis, MO 63121, USA</p>
+                <p>Email: engineering@umsl.edu</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 University of Missouri–St. Louis. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
